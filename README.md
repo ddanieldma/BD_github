@@ -1,1 +1,1 @@
-<img src="DER_Daniel.png">
+<img src="ultima_versao.png">
