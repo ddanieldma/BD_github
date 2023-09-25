@@ -1,1 +1,1 @@
-<img src="DiagramaER.png">
+<img src="Esquema_relacional.png">
