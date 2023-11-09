@@ -1,4 +1,3 @@
-/*
 INSERT INTO Usuário VALUES ('PedroPHC25', 'Pedro Henrique Coterli', 'PRO');
 INSERT INTO Usuário VALUES ('migasil', 'Miguel da Silva', 'Normal');
 INSERT INTO Usuário VALUES ('nicolessouza', 'Nicole dos Santos de Souza', 'PRO');
@@ -47,21 +46,21 @@ INSERT INTO Organização VALUES ('FGV EMAp', 'FGV - Escola de Matemática Aplic
 INSERT INTO Organização VALUES ('proac', 'Programadores em Ação', null, 'contato@proac.com');
 INSERT INTO Organização VALUES ('repocen', 'Repositório Central', 'repocen.com', 'contato@repocen.com');
 
-INSERT INTO Organização_Linguagens VALUES ('codab', 'Python');
-INSERT INTO Organização_Linguagens VALUES ('codab', 'JavaScript');
-INSERT INTO Organização_Linguagens VALUES ('codab', 'C#');
-INSERT INTO Organização_Linguagens VALUES ('devuni', 'Java');
-INSERT INTO Organização_Linguagens VALUES ('devuni', 'C#');
-INSERT INTO Organização_Linguagens VALUES ('devuni', 'Python');
-INSERT INTO Organização_Linguagens VALUES ('FGV EMAp', 'Shell');
-INSERT INTO Organização_Linguagens VALUES ('FGV EMAp', 'Python');
-INSERT INTO Organização_Linguagens VALUES ('FGV EMAp', 'Jupyter Notebook');
-INSERT INTO Organização_Linguagens VALUES ('proac', 'C++');
-INSERT INTO Organização_Linguagens VALUES ('proac', 'JavaScript');
-INSERT INTO Organização_Linguagens VALUES ('proac', 'Python');
-INSERT INTO Organização_Linguagens VALUES ('repocen', 'JavaScript');
-INSERT INTO Organização_Linguagens VALUES ('repocen', 'C#');
-INSERT INTO Organização_Linguagens VALUES ('repocen', 'Python');
+INSERT INTO OrganizaçãoLinguagens VALUES ('codab', 'Python');
+INSERT INTO OrganizaçãoLinguagens VALUES ('codab', 'JavaScript');
+INSERT INTO OrganizaçãoLinguagens VALUES ('codab', 'C#');
+INSERT INTO OrganizaçãoLinguagens VALUES ('devuni', 'Java');
+INSERT INTO OrganizaçãoLinguagens VALUES ('devuni', 'C#');
+INSERT INTO OrganizaçãoLinguagens VALUES ('devuni', 'Python');
+INSERT INTO OrganizaçãoLinguagens VALUES ('FGV EMAp', 'Shell');
+INSERT INTO OrganizaçãoLinguagens VALUES ('FGV EMAp', 'Python');
+INSERT INTO OrganizaçãoLinguagens VALUES ('FGV EMAp', 'Jupyter Notebook');
+INSERT INTO OrganizaçãoLinguagens VALUES ('proac', 'C++');
+INSERT INTO OrganizaçãoLinguagens VALUES ('proac', 'JavaScript');
+INSERT INTO OrganizaçãoLinguagens VALUES ('proac', 'Python');
+INSERT INTO OrganizaçãoLinguagens VALUES ('repocen', 'JavaScript');
+INSERT INTO OrganizaçãoLinguagens VALUES ('repocen', 'C#');
+INSERT INTO OrganizaçãoLinguagens VALUES ('repocen', 'Python');
 
 INSERT INTO UsrSegueOrg VALUES ('PedroPHC25', 'devuni');
 INSERT INTO UsrSegueOrg VALUES ('PedroPHC25', 'FGV EMAp');
@@ -98,7 +97,6 @@ INSERT INTO Repositório VALUES ('R2468109753', 'Zen', 'PedroPHC25', 'Privado', 
 INSERT INTO Repositório VALUES ('R7325491860', 'Zen', 'migasil', 'Público', null);
 INSERT INTO Repositório VALUES ('R6152039478', 'Canary-Casanova-Cascade', 'ddanieldma', 'Público', 'Sistema de detecção de ameaças cibernéticas inspirado nos canários.');
 INSERT INTO Repositório VALUES ('R3492876105', 'Batman-Bender-Project', 'nicolessouza', 'Público', 'Um robô inspirado no Batman para tarefas domésticas e emergências.');
-*/
 
 INSERT INTO RepositórioLinguagens VALUES ('R9083745612', 'Python', 100);
 INSERT INTO RepositórioLinguagens VALUES ('R2468109753', 'JavaScript', 30);
@@ -108,3 +106,29 @@ INSERT INTO RepositórioLinguagens VALUES ('R7325491860', 'Java', 60);
 INSERT INTO RepositórioLinguagens VALUES ('R7325491860', 'C#', 40);
 INSERT INTO RepositórioLinguagens VALUES ('R6152039478', 'Shell', 100);
 INSERT INTO RepositórioLinguagens VALUES ('R3492876105', 'C++', 100);
+
+INSERT INTO UsrFazForkRep VALUES ('nicolessouza', 'R9083745612');
+INSERT INTO UsrFazForkRep VALUES ('isarod', 'R3492876105');
+INSERT INTO UsrFazForkRep VALUES ('livoliv', 'R7325491860');
+INSERT INTO UsrFazForkRep VALUES ('livoliv', 'R6152039478');
+INSERT INTO UsrFazForkRep VALUES ('livoliv', 'R3492876105');
+INSERT INTO UsrFazForkRep VALUES ('gussou', 'R7325491860');
+INSERT INTO UsrFazForkRep VALUES ('gussou', 'R3492876105');
+INSERT INTO UsrFazForkRep VALUES ('nicolessouza', 'R2468109753');
+INSERT INTO UsrFazForkRep VALUES ('lucper', 'R2468109753');
+INSERT INTO UsrFazForkRep VALUES ('rafaalv', 'R6152039478');
+INSERT INTO UsrFazForkRep VALUES ('nicolessouza', 'R6152039478');
+INSERT INTO UsrFazForkRep VALUES ('livoliv', 'R9083745612');
+
+INSERT INTO UsrContribuiRep VALUES ('PedroPHC25', 'R9083745612');
+INSERT INTO UsrContribuiRep VALUES ('nicolessouza', 'R9083745612');
+INSERT INTO UsrContribuiRep VALUES ('livoliv', 'R9083745612');
+INSERT INTO UsrContribuiRep VALUES ('PedroPHC25', 'R2468109753');
+INSERT INTO UsrContribuiRep VALUES ('migasil', 'R2468109753');
+INSERT INTO UsrContribuiRep VALUES ('migasil', 'R7325491860');
+INSERT INTO UsrContribuiRep VALUES ('livoliv', 'R7325491860');
+INSERT INTO UsrContribuiRep VALUES ('ddanieldma', 'R6152039478');
+INSERT INTO UsrContribuiRep VALUES ('nicolessouza', 'R3492876105');
+INSERT INTO UsrContribuiRep VALUES ('isarod', 'R3492876105');
+INSERT INTO UsrContribuiRep VALUES ('livoliv', 'R3492876105');
+INSERT INTO UsrContribuiRep VALUES ('gussou', 'R3492876105');
