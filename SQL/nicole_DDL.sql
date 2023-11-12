@@ -6,31 +6,25 @@ CREATE TABLE Commit (
     NoRemocoes INT NOT NULL,
     DataCommit TIMESTAMP NOT NULL,
     FeitoPorUsrID VARCHAR(30) NOT NULL,
-    BchNome VARCHAR(50) NOT NULL,
-    RepID CHAR(11) NOT NULL,
+    BchID VARCHAR(11) NOT NULL,
     FOREIGN KEY (FeitoPorUsrID) REFERENCES Usuário(UsrID),
-    /* FOREIGN KEY (BchNome) REFERENCES Branch(BchNome), */
-    FOREIGN KEY (RepID) REFERENCES Repositório(RepID)
+    FOREIGN KEY (BchID) REFERENCES Branch(BchID)
 );
 
 CREATE TABLE CmtAlteraPst(
-    RepID CHAR(11) NOT NULL,
-    BchNome VARCHAR(50) NOT NULL,
-    PstNome VARCHAR(50) NOT NULL,
+    PstID VARCHAR(11) NOT NULL,
     CmtID VARCHAR(40) NOT NULL,
-    PRIMARY KEY (RepID, BchNome, PstNome, CmtID),
-    FOREIGN KEY (RepID) REFERENCES Repositório(RepID),
-    /* FOREIGN KEY (BchNome) REFERENCES Branch(BchNome),
-    FOREIGN KEY (PstNome) REFERENCES Pasta(PstNome), */
+    PRIMARY KEY (PstID, CmtID),
+    FOREIGN KEY (PstID) REFERENCES Pasta(PstID),
     FOREIGN KEY (CmtID) REFERENCES Commit(CmtID)
 );
 
 CREATE TABLE CmtAlteraArq(
     CmtID VARCHAR(40) NOT NULL,
-    ArqID VARCHAR(30) NOT NULL,
+    ArqID VARCHAR(7) NOT NULL,
     AlteracoesTexto TEXT NOT NULL,
     PRIMARY KEY (CmtID, ArqID),
-    FOREIGN KEY (CmtID) REFERENCES Commit(CmtID)
-    /*, FOREIGN KEY (ArqID) REFERENCES Arquivo(ArqID) */
+    FOREIGN KEY (CmtID) REFERENCES Commit(CmtID),
+    FOREIGN KEY (ArqID) REFERENCES Arquivo(ArqID)
 );
 
