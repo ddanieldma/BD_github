@@ -4,7 +4,6 @@ CREATE TABLE Branch
     BchID CHAR(11) NOT NULL PRIMARY KEY,
     RepID CHAR(11) NOT NULL,
     BchNome VARCHAR(30) NOT NULL,
-    -- CommitUsuario VARCHAR(100) NOT NULL,
     FOREIGN KEY (RepID) REFERENCES Repositório(RepID)
 );
 
