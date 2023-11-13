@@ -1,4 +1,10 @@
--- Selecionando o tamamnho total de cada pasta
+
+/* 
+Selecionando o tamamnho total de cada pasta sendo esse a soma dos 
+tamanhos dos arquivos naquela pasta, cada pasta, seguinodo a lógica de
+que cada pasta é uma combinação do usuário, do repositório e da branch
+a que pertence 
+*/
 SELECT 
 	usr.usrid as usuário, 
 	rep.repnome as repositório, 
@@ -24,7 +30,10 @@ GROUP BY
 ORDER BY 
 	TamanhoTotalPasta desc;	
 
--- Selecionando número total de linhas de cada pasta
+/*
+Selecionando número total de linhas de cada pasta sendo esse a soma
+dos números de linhs de cada arquivo dentro da pasta
+*/
 SELECT 
 	usr.usrid as usuário, 
 	rep.repnome as repositório, 
