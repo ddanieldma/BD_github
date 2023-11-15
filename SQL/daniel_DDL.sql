@@ -1,4 +1,3 @@
--- Não finalizado
 CREATE TABLE Branch
 (
     BchID CHAR(11) NOT NULL PRIMARY KEY,
