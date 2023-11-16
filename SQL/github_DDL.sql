@@ -126,7 +126,7 @@ CREATE TABLE Commit (
     NoArqAlterados INT NOT NULL,
     NoAdicoes INT NOT NULL,
     NoRemocoes INT NOT NULL,
-    -- DataCommit TIMESTAMP NOT NULL,
+    DataCommit TIMESTAMP NOT NULL,
     FeitoPorUsrID VARCHAR(30) NOT NULL,
     BchID VARCHAR(11) NOT NULL,
     FOREIGN KEY (FeitoPorUsrID) REFERENCES Usuário(UsrID),

@@ -1,4 +1,3 @@
-
 /* 
 Selecionando o tamamnho total de cada pasta sendo esse a soma dos 
 tamanhos dos arquivos naquela pasta, cada pasta, seguinodo a lógica de

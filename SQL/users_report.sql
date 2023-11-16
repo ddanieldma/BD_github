@@ -30,4 +30,4 @@ SELECT R.usrid, no_de_repositórios, no_de_forks, no_de_contribuições
 FROM rep_por_usr R, fork_por_usr F, cont_por_usr C
 WHERE R.usrid = F.usrid AND F.usrid = C.usrid;
 
-DROP VIEW rep_por_usr, fork_por_usr, cont_por_usr
+DROP VIEW rep_por_usr, fork_por_usr, cont_por_usr;
